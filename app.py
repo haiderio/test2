@@ -13,6 +13,7 @@ def name_handler(pm):
     bot.register_next_step_handler(sent_msg, age_handler, name) #Next message will call the age_handler function
 
 def age_handler(pm, name):
+    
     age = pm.text
     bot.send_message(pm.chat.id, f"Your name is {name}, and your age is {age}.")
 
